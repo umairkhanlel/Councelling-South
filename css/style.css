@@ -1,0 +1,336 @@
+*, body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Museo100";
+}
+
+@font-face {
+  font-family: "Museo100";
+  src: url(../images/fonts/MuseoSans-100.ttf);
+}
+@font-face {
+  font-family: "Museo300";
+  src: url("../images/fonts/MuseoSans-300.ttf");
+}
+@font-face {
+  font-family: "Museo500";
+  src: url("../images/fonts/MuseoSans-500.ttf");
+}
+.inner-container {
+  width: 1145px;
+  margin: 0 auto;
+}
+
+.main-container {
+  width: 1600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.main-container .banner {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  width: 1600px;
+  height: 890px;
+  padding-top: 32px;
+  margin-bottom: 125px;
+}
+.main-container .banner .header {
+  display: grid;
+  grid-template-columns: 40px auto;
+  margin-bottom: 150px;
+}
+.main-container .banner .header .cs {
+  margin-left: 45px;
+  justify-self: start;
+}
+.main-container .banner .header .cs p {
+  font-size: 23px;
+  font-weight: bolder;
+}
+.main-container .banner .header .list {
+  justify-self: end;
+  margin-right: 45px;
+}
+.main-container .banner .header .list ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.main-container .banner .header .list ul li:last-child {
+  margin: 0px;
+}
+.main-container .banner .inner-container .banner-grid {
+  display: grid;
+  grid-template-columns: 635px auto;
+}
+.main-container .banner .inner-container .banner-grid .banner-text .councel {
+  margin-bottom: 44px;
+  font-size: 44px;
+}
+.main-container .banner .inner-container .banner-grid .banner-text p {
+  margin-bottom: 19px;
+}
+.main-container .banner .inner-container .banner-grid .banner-text p:last-child {
+  margin: 0px;
+}
+.main-container .mid-container .inner-container .service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 68px;
+}
+.main-container .mid-container .inner-container .service .lorem {
+  grid-column: 1/3;
+  margin-bottom: 50px;
+}
+.main-container .mid-container .inner-container .service .lorem .service {
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+.main-container .mid-container .inner-container .service .lorem p {
+  font-size: 20px;
+}
+.main-container .mid-container .inner-container .service .service-1 .g-service {
+  height: 325px;
+  margin-bottom: 70px;
+}
+.main-container .mid-container .inner-container .service .service-1 .g-service h2 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+.main-container .mid-container .inner-container .service .service-1 .g-service h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-container .mid-container .inner-container .service .service-1 .g-service p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.main-container .mid-container .inner-container .service .service-1 .g-service button {
+  padding: 10px 20px 10px 20px;
+  border: 0.1px solid #ebebeb;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.main-container .mid-container .inner-container .service .service-1 .g-service-1 {
+  height: 150px;
+  margin-bottom: 55px;
+}
+.main-container .mid-container .inner-container .service .service-1 .g-service-1 h2 {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+.main-container .mid-container .inner-container .service .service-1 .g-service-1 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-container .mid-container .inner-container .service .service-1 .g-service-1 p {
+  font-size: 20px;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service {
+  height: 325px;
+  margin-bottom: 70px;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service .active {
+  text-decoration: underline;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service .active h2 {
+  text-decoration: underline;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service h2 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service button {
+  padding: 10px 20px 10px 20px;
+  border: 0.1px solid #ebebeb;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service-1 {
+  height: 150px;
+  margin-bottom: 55px;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service-1 h2 {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service-1 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-container .mid-container .inner-container .service .service-2 .g-service-1 p {
+  font-size: 20px;
+}
+.main-container .mid-container .inner-container .service .all button {
+  padding: 10px 20px 10px 20px;
+  border: 0.1px solid #ebebeb;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-top: 165px;
+  margin-bottom: 115px;
+  width: 150px;
+}
+.main-container .mid-container .psycho {
+  background-color: #fcfcfc;
+  padding: 110px 0px 110px 0px;
+}
+.main-container .mid-container .psycho .inner-container .therapy .meet p {
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+.main-container .mid-container .psycho .inner-container .therapy p {
+  margin-bottom: 25px;
+}
+.main-container .mid-container .psycho .inner-container .therapy .therapist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.main-container .mid-container .text {
+  padding: 110px 0px 110px 0px;
+}
+.main-container .mid-container .text .inner-container .g-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+.main-container .mid-container .text .inner-container .g-form .appointment .book {
+  margin-bottom: 15px;
+}
+.main-container .mid-container .text .inner-container .g-form .appointment .book p {
+  font-size: 24px;
+}
+.main-container .mid-container .text .inner-container .g-form .appointment p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.main-container .mid-container .text .inner-container .g-form .appointment p:last-child {
+  margin: 0px;
+}
+.main-container .mid-container .text .inner-container .g-form .appointment a {
+  text-decoration: none;
+  border-bottom: 0.1px solid #949494;
+}
+.main-container .mid-container .text .inner-container .g-form .form {
+  border: 0.1px solid #ebebeb;
+  padding: 40px 30px 40px 30px;
+}
+.main-container .mid-container .text .inner-container .g-form .form form {
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  grid-gap: 155px;
+}
+.main-container .mid-container .text .inner-container .g-form .form form .inputs p {
+  margin-bottom: 10px;
+}
+.main-container .mid-container .text .inner-container .g-form .form form .inputs p label {
+  font-weight: bolder;
+}
+.main-container .mid-container .text .inner-container .g-form .form form .inputs .name {
+  border: 0.1px solid #ebebeb;
+  background-color: white;
+  background-color: #fcfcfc;
+  width: 325px;
+  height: 45px;
+  margin-bottom: 10px;
+}
+.main-container .mid-container .text .inner-container .g-form .form form .comment p {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bolder;
+}
+.main-container .mid-container .text .inner-container .g-form .form form .comment textarea {
+  border: 0.1px solid #ebebeb;
+  background-color: white;
+}
+.main-container .mid-container .text .inner-container .g-form .form button {
+  width: 315px;
+  text-align: center;
+  position: relative;
+  left: 250px;
+  align-items: center;
+  grid-column: 1/3;
+  padding: 10px 20px 10px 20px;
+  border: 0.1px solid #ebebeb;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.main-container footer {
+  padding: 60px 0px 60px 0px;
+  background-color: #fcfcfc;
+}
+.main-container footer .inner-container .foot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 60px;
+}
+.main-container footer .inner-container .foot-grid .list-1 p {
+  margin-bottom: 25px;
+  font-family: "Museo300";
+  font-size: 20px;
+}
+.main-container footer .inner-container .foot-grid .list-1 ul li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.main-container footer .inner-container .foot-grid .list-1 ul li:last-child {
+  margin: 0px;
+}
+.main-container footer .inner-container .foot-grid .list-2 p {
+  margin-bottom: 25px;
+  font-family: "Museo300";
+  font-size: 20px;
+}
+.main-container footer .inner-container .foot-grid .list-2 ul li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.main-container footer .inner-container .foot-grid .list-2 ul li:last-child {
+  margin: 0px;
+}
+.main-container footer .inner-container .foot-grid .list-3 p {
+  margin-bottom: 25px;
+  font-family: "Museo300";
+  font-size: 20px;
+}
+.main-container footer .inner-container .foot-grid .list-3 ul li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.main-container footer .inner-container .foot-grid .list-3 ul li:last-child {
+  margin: 0px;
+}
+.main-container footer .inner-container .foot-grid .list-4 p {
+  margin-bottom: 25px;
+  font-family: "Museo300";
+  font-size: 20px;
+}
+.main-container footer .inner-container .foot-grid .list-4 ul li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.main-container footer .inner-container .foot-grid .list-4 ul li:last-child {
+  margin: 0px;
+}
+.main-container footer .inner-container .foot-grid .list-4 ul li i {
+  padding-right: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

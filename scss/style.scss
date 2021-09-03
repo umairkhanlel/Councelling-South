@@ -1,0 +1,395 @@
+*,body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Museo100";
+  
+}
+@font-face {
+    font-family: "Museo100";
+    // src: url("../fonts/MuseoSans-100.ttf");
+    src:url(../images/fonts/MuseoSans-100.ttf)
+  }
+  @font-face {
+    font-family: "Museo300";
+    src:url("../images/fonts/MuseoSans-300.ttf")
+  }
+  @font-face {
+    font-family: "Museo500";
+    src:url("../images/fonts/MuseoSans-500.ttf")
+  }
+.inner-container{
+    width:1145px;
+    margin: 0 auto;
+    
+}
+.main-container{
+    width: 1600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    .banner{
+        background-image: url("../images/background.png");
+        background-repeat: no-repeat;
+        width: 1600px;
+        height: 890px;
+        padding-top: 32px;
+        margin-bottom: 125px;
+        .header{
+            display: grid;
+            grid-template-columns: 40px auto;
+            margin-bottom: 150px;
+            .cs{
+                margin-left: 45px;
+                justify-self: start;
+                p{
+                    font-size: 23px;
+                    font-weight: bolder;
+                }
+            }
+            .list{
+                justify-self: end;
+                margin-right: 45px;
+                ul{
+                    // display: ;
+                    li{
+                        display: inline-block;
+                        margin-right: 20px;
+                        font-size: 16px;
+                        font-weight: bolder;
+                        &:last-child{
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .inner-container{
+            .banner-grid{
+                display:grid;
+                grid-template-columns: 635px auto;
+                .banner-text{
+                    .councel{
+                        margin-bottom: 44px;
+                        font-size: 44px;
+                    }
+                    p{
+                        margin-bottom: 19px;
+                        &:last-child{
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+    .mid-container{
+        .inner-container {
+            .service {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 68px;
+                .lorem{
+                    grid-column: 1/3;
+                    margin-bottom: 50px;
+                    .service {
+                        font-size: 34px;
+                        margin-bottom: 35px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+                .service-1{
+                    .g-service{
+                        height: 325px;
+                        margin-bottom: 70px;
+                        h2{
+                            font-size: 22px;
+                            margin-bottom: 40px;
+                            &:hover{
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                        p{
+                            font-size: 20px;
+                            margin-bottom: 40px;
+                        }
+                        button{
+                            padding: 10px 20px 10px 20px;
+                            border: 0.1px solid #ebebeb;
+                            background-color: white;
+                            font-size: 16px;
+                            font-weight: bolder;
+                        }
+                    }
+                    .g-service-1{
+                        height: 150px;
+                        margin-bottom: 55px;
+                        h2{
+                            margin-bottom: 40px;
+                            font-size: 22px;
+                            &:hover{
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                        p{
+                            font-size: 20px;
+                        }
+                        
+                    }
+                }
+                .service-2{
+                    .g-service{
+                        height: 325px;
+                        margin-bottom: 70px;
+                        .active{
+                            text-decoration: underline;
+                            h2{
+                                text-decoration: underline;
+                            }
+                        }
+                        h2{
+                            font-size: 22px;
+                            margin-bottom: 40px;
+                            &:hover{
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                            // text-decoration: underline;
+                        }
+                        p{
+                            font-size: 20px;
+                            margin-bottom: 40px;
+                        }
+                        button{
+                            padding: 10px 20px 10px 20px;
+                            border: 0.1px solid #ebebeb;
+                            background-color: white;
+                            font-size: 16px;
+                            font-weight: bolder;
+                        }
+                    }
+                    .g-service-1{
+                        height: 150px;
+                        margin-bottom: 55px;
+                        h2{
+                            margin-bottom: 40px;
+                            font-size: 22px;
+                            &:hover{
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .all{
+                    button{
+                        padding: 10px 20px 10px 20px;
+                        border: 0.1px solid #ebebeb;
+                        background-color: white;
+                        font-size: 16px;
+                        font-weight: bolder;
+                        margin-top: 165px;
+                        margin-bottom: 115px;
+                        width: 150px;
+                    }
+                }
+            }
+        }
+        .psycho{
+            background-color: #fcfcfc;
+            padding: 110px 0px 110px 0px;
+            .inner-container{
+                .therapy {
+                    .meet{
+                        p{
+                            font-size: 34px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                    p {
+                        margin-bottom: 25px;
+                    }
+                    .therapist{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+                    }
+                }
+            }
+        }
+        .text{
+            padding: 110px 0px 110px 0px;
+            .inner-container{
+                .g-form {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 100px;
+                    .appointment{
+                        .book {
+                            margin-bottom: 15px;
+                            p{
+                                font-size: 24px;
+                            }
+                        }
+                        p{
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                            &:last-child{
+                                margin: 0px;
+                            }
+                        }
+                        a{
+                            text-decoration: none;
+                            border-bottom: 0.1px solid #949494;
+                        }
+                    }.form{
+                        border: 0.1px solid #ebebeb;
+                        // display: grid;
+                        padding:40px 30px 40px 30px;
+                        form{
+                            margin-bottom: 25px;
+                            display: grid;
+                            grid-template-columns: 290px 1fr;
+                            grid-gap: 155px;
+                            
+                            .inputs{
+                                p{
+                                    margin-bottom: 10px;
+                                    label{
+                                        font-weight: bolder;
+                                    }
+                                }
+                                
+                                .name{
+                                    // border: none;
+                                    border: 0.1px solid #ebebeb;
+                                    background-color: white;
+                                    // background-color: #f2eaea;
+                                    background-color: #fcfcfc;
+                                    width: 325px;
+                                    height: 45px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            .comment{
+                                p { 
+                                    font-size: 18px;
+                                    margin-bottom: 8px;
+                                    font-weight: bolder;
+                                }
+                                textarea{
+                                    border: 0.1px solid #ebebeb;
+                                    background-color: white;
+                                }
+                            }
+                        }
+                        button{
+                            width: 315px;
+                            text-align: center;
+                            position: relative;
+                            left: 250px;
+                            align-items: center;
+                            grid-column: 1/3;
+                            padding: 10px 20px 10px 20px;
+                            border: 0.1px solid #ebebeb;
+                            background-color: white;
+                            font-size: 16px;
+                            font-weight: bolder;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    footer{
+        padding: 60px 0px 60px 0px;
+        background-color: #fcfcfc;
+        .inner-container {
+            .foot-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 60px;
+                .list-1 {
+                    p {
+                        margin-bottom: 25px;
+                        font-family: "Museo300";
+                        font-size: 20px;
+                    }
+                    ul{
+                        li{
+                            font-size: 14px;
+                            list-style: none;
+                            margin-bottom: 10px;
+                            &:last-child{
+                                margin: 0px;
+                            }
+                        }
+                        
+                    }
+                }
+                .list-2 {
+                    p {
+                        margin-bottom: 25px;
+                        font-family: "Museo300";
+                        font-size: 20px;
+                    }
+                    ul{
+                        li{
+                            font-size: 14px;
+                            list-style: none;
+                            margin-bottom: 10px;
+                            &:last-child{
+                                margin: 0px;
+                            }
+                        }
+                        
+                    }
+                }.list-3 {
+                    p {
+                        margin-bottom: 25px;
+                        font-family: "Museo300";
+                        font-size: 20px;
+                    }
+                    ul{
+                        li{
+                            font-size: 14px;
+                            list-style: none;
+                            margin-bottom: 10px;
+                            &:last-child{
+                                margin: 0px;
+                            }
+                        }
+                        
+                    }
+                }.list-4 {
+                    p {
+                        margin-bottom: 25px;
+                        font-family: "Museo300";
+                        font-size: 20px;
+                    }
+                    ul{
+                        li{
+                            font-size: 14px;
+                            list-style: none;
+                            margin-bottom: 10px;
+                            &:last-child{
+                                margin: 0px;
+                            }
+                            i{
+                                padding-right: 8px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
