@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   font-family: "Museo100";
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -16,21 +17,21 @@
   font-family: "Museo500";
   src: url("../images/fonts/MuseoSans-500.ttf");
 }
-.inner-container {
-  width: 1145px;
-  margin: 0 auto;
-}
-
 .main-container {
-  width: 1600px;
+  max-width: 1920px;
   margin: 0 auto;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+.main-container .inner-container {
+  max-width: 1470px;
+  margin: 0 auto;
 }
 .main-container .banner {
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
-  width: 1600px;
-  height: 890px;
+  background-size: cover;
+  height: 1030px;
   padding-top: 32px;
   margin-bottom: 125px;
 }
@@ -38,18 +39,16 @@
   display: grid;
   grid-template-columns: 40px auto;
   margin-bottom: 150px;
+  padding: 0px 45px 0px 45px;
+  align-items: center;
 }
-.main-container .banner .header .cs {
-  margin-left: 45px;
+.main-container .banner .header h1 {
   justify-self: start;
-}
-.main-container .banner .header .cs p {
   font-size: 23px;
-  font-weight: bolder;
+  font-weight: normal;
 }
 .main-container .banner .header .list {
   justify-self: end;
-  margin-right: 45px;
 }
 .main-container .banner .header .list ul li {
   display: inline-block;
@@ -57,205 +56,171 @@
   font-size: 16px;
   font-weight: bolder;
 }
+.main-container .banner .header .list ul li a {
+  text-decoration: none;
+  color: #555555;
+}
 .main-container .banner .header .list ul li:last-child {
   margin: 0px;
 }
-.main-container .banner .inner-container .banner-grid {
-  display: grid;
-  grid-template-columns: 635px auto;
+.main-container .banner .inner-container .banner-text {
+  width: 635px;
 }
-.main-container .banner .inner-container .banner-grid .banner-text .councel {
+.main-container .banner .inner-container .banner-text h1 {
   margin-bottom: 44px;
-  font-size: 44px;
+  font-weight: normal;
 }
-.main-container .banner .inner-container .banner-grid .banner-text p {
+.main-container .banner .inner-container .banner-text p {
   margin-bottom: 19px;
 }
-.main-container .banner .inner-container .banner-grid .banner-text p:last-child {
+.main-container .banner .inner-container .banner-text p:last-child {
   margin: 0px;
 }
-.main-container .mid-container .inner-container .service {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 68px;
+.main-container .mid-container .service .lorem {
+  margin-bottom: 65px;
 }
-.main-container .mid-container .inner-container .service .lorem {
-  grid-column: 1/3;
-  margin-bottom: 50px;
-}
-.main-container .mid-container .inner-container .service .lorem .service {
+.main-container .mid-container .service .lorem h2 {
   font-size: 34px;
   margin-bottom: 35px;
+  font-weight: normal;
 }
-.main-container .mid-container .inner-container .service .lorem p {
+.main-container .mid-container .service .lorem p {
   font-size: 20px;
 }
-.main-container .mid-container .inner-container .service .service-1 .g-service {
-  height: 325px;
-  margin-bottom: 70px;
+.main-container .mid-container .service .g-service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 74px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 32px;
 }
-.main-container .mid-container .inner-container .service .service-1 .g-service h2 {
+.main-container .mid-container .service .g-service h2 {
   font-size: 22px;
   margin-bottom: 40px;
+  font-weight: normal;
+  font-family: "Museo300";
+  color: #555555;
 }
-.main-container .mid-container .inner-container .service .service-1 .g-service h2:hover {
+.main-container .mid-container .service .g-service h2:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.main-container .mid-container .inner-container .service .service-1 .g-service p {
+.main-container .mid-container .service .g-service p {
   font-size: 20px;
   margin-bottom: 40px;
 }
-.main-container .mid-container .inner-container .service .service-1 .g-service button {
+.main-container .mid-container .service .g-service button {
   padding: 10px 20px 10px 20px;
-  border: 0.1px solid #ebebeb;
+  border: 1px solid #ebebeb;
+  background-color: white;
+  font-size: 16px;
+}
+.main-container .mid-container .service .g-service button:hover {
+  cursor: pointer;
+}
+.main-container .mid-container .service .excluded {
+  border: none;
+}
+.main-container .mid-container .service .all {
+  grid-column: 1/3;
+  padding-top: 165px;
+  padding-bottom: 115px;
+}
+.main-container .mid-container .service .all button {
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #ebebeb;
   background-color: white;
   font-size: 16px;
   font-weight: bolder;
-}
-.main-container .mid-container .inner-container .service .service-1 .g-service-1 {
-  height: 150px;
-  margin-bottom: 55px;
-}
-.main-container .mid-container .inner-container .service .service-1 .g-service-1 h2 {
-  margin-bottom: 40px;
-  font-size: 22px;
-}
-.main-container .mid-container .inner-container .service .service-1 .g-service-1 h2:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.main-container .mid-container .inner-container .service .service-1 .g-service-1 p {
-  font-size: 20px;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service {
-  height: 325px;
-  margin-bottom: 70px;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service .active {
-  text-decoration: underline;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service .active h2 {
-  text-decoration: underline;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service h2 {
-  font-size: 22px;
-  margin-bottom: 40px;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service h2:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service p {
-  font-size: 20px;
-  margin-bottom: 40px;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service button {
-  padding: 10px 20px 10px 20px;
-  border: 0.1px solid #ebebeb;
-  background-color: white;
-  font-size: 16px;
-  font-weight: bolder;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service-1 {
-  height: 150px;
-  margin-bottom: 55px;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service-1 h2 {
-  margin-bottom: 40px;
-  font-size: 22px;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service-1 h2:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.main-container .mid-container .inner-container .service .service-2 .g-service-1 p {
-  font-size: 20px;
-}
-.main-container .mid-container .inner-container .service .all button {
-  padding: 10px 20px 10px 20px;
-  border: 0.1px solid #ebebeb;
-  background-color: white;
-  font-size: 16px;
-  font-weight: bolder;
-  margin-top: 165px;
-  margin-bottom: 115px;
   width: 150px;
+}
+.main-container .mid-container .service .all button:hover {
+  cursor: pointer;
 }
 .main-container .mid-container .psycho {
   background-color: #fcfcfc;
   padding: 110px 0px 110px 0px;
 }
-.main-container .mid-container .psycho .inner-container .therapy .meet p {
+.main-container .mid-container .psycho .therapy h2 {
   font-size: 34px;
   margin-bottom: 25px;
+  font-weight: normal;
 }
-.main-container .mid-container .psycho .inner-container .therapy p {
+.main-container .mid-container .psycho .therapy p {
   margin-bottom: 25px;
 }
-.main-container .mid-container .psycho .inner-container .therapy .therapist {
+.main-container .mid-container .psycho .therapy .therapist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 70px;
+}
+.main-container .mid-container .psycho .therapy .therapist .psychologists img:hover {
+  cursor: pointer;
+}
+.main-container .mid-container .psycho .therapy .therapist .psychologists h3 {
+  padding-top: 21px;
+  margin-bottom: 15px;
 }
 .main-container .mid-container .text {
   padding: 110px 0px 110px 0px;
 }
-.main-container .mid-container .text .inner-container .g-form {
+.main-container .mid-container .text .g-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 100px;
 }
-.main-container .mid-container .text .inner-container .g-form .appointment .book {
-  margin-bottom: 15px;
-}
-.main-container .mid-container .text .inner-container .g-form .appointment .book p {
+.main-container .mid-container .text .g-form .appointment h3 {
   font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: normal;
 }
-.main-container .mid-container .text .inner-container .g-form .appointment p {
+.main-container .mid-container .text .g-form .appointment p {
   font-size: 16px;
   margin-bottom: 15px;
 }
-.main-container .mid-container .text .inner-container .g-form .appointment p:last-child {
+.main-container .mid-container .text .g-form .appointment p:last-child {
   margin: 0px;
 }
-.main-container .mid-container .text .inner-container .g-form .appointment a {
+.main-container .mid-container .text .g-form .appointment a {
   text-decoration: none;
-  border-bottom: 0.1px solid #949494;
+  border-bottom: 1px solid #949494;
 }
-.main-container .mid-container .text .inner-container .g-form .form {
-  border: 0.1px solid #ebebeb;
+.main-container .mid-container .text .g-form form {
+  border: 1px solid #ebebeb;
   padding: 40px 30px 40px 30px;
-}
-.main-container .mid-container .text .inner-container .g-form .form form {
   margin-bottom: 25px;
   display: grid;
   grid-template-columns: 290px 1fr;
-  grid-gap: 155px;
+  grid-gap: 0px 155px;
 }
-.main-container .mid-container .text .inner-container .g-form .form form .inputs p {
+.main-container .mid-container .text .g-form form .inputs p {
   margin-bottom: 10px;
 }
-.main-container .mid-container .text .inner-container .g-form .form form .inputs p label {
+.main-container .mid-container .text .g-form form .inputs p label {
   font-weight: bolder;
+  color: #555555;
 }
-.main-container .mid-container .text .inner-container .g-form .form form .inputs .name {
-  border: 0.1px solid #ebebeb;
+.main-container .mid-container .text .g-form form .inputs .name {
+  border: 1px solid #ebebeb;
   background-color: white;
   background-color: #fcfcfc;
   width: 325px;
   height: 45px;
   margin-bottom: 10px;
 }
-.main-container .mid-container .text .inner-container .g-form .form form .comment p {
+.main-container .mid-container .text .g-form form .comment p {
   font-size: 18px;
   margin-bottom: 8px;
   font-weight: bolder;
+  color: #555555;
 }
-.main-container .mid-container .text .inner-container .g-form .form form .comment textarea {
-  border: 0.1px solid #ebebeb;
+.main-container .mid-container .text .g-form form .comment textarea {
+  border: 1px solid #ebebeb;
   background-color: white;
 }
-.main-container .mid-container .text .inner-container .g-form .form button {
+.main-container .mid-container .text .g-form form button {
+  margin-top: 30px;
   width: 315px;
   text-align: center;
   position: relative;
@@ -263,74 +228,93 @@
   align-items: center;
   grid-column: 1/3;
   padding: 10px 20px 10px 20px;
-  border: 0.1px solid #ebebeb;
+  border: 1px solid #ebebeb;
   background-color: white;
   font-size: 16px;
   font-weight: bolder;
+}
+.main-container .mid-container .text .g-form form button:hover {
+  cursor: pointer;
 }
 .main-container footer {
   padding: 60px 0px 60px 0px;
   background-color: #fcfcfc;
 }
-.main-container footer .inner-container .foot-grid {
+.main-container footer .foot-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 60px;
 }
-.main-container footer .inner-container .foot-grid .list-1 p {
+.main-container footer .foot-grid .list-1 h3 {
   margin-bottom: 25px;
-  font-family: "Museo300";
   font-size: 20px;
+  font-weight: normal;
 }
-.main-container footer .inner-container .foot-grid .list-1 ul li {
+.main-container footer .foot-grid .list-1 ul li {
   font-size: 14px;
   list-style: none;
   margin-bottom: 10px;
 }
-.main-container footer .inner-container .foot-grid .list-1 ul li:last-child {
+.main-container footer .foot-grid .list-1 ul li:last-child {
   margin: 0px;
 }
-.main-container footer .inner-container .foot-grid .list-2 p {
-  margin-bottom: 25px;
-  font-family: "Museo300";
-  font-size: 20px;
+.main-container footer .foot-grid .list-1 ul li a {
+  text-decoration: none;
+  color: #555555;
 }
-.main-container footer .inner-container .foot-grid .list-2 ul li {
+.main-container footer .foot-grid .list-2 h3 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.main-container footer .foot-grid .list-2 ul li {
   font-size: 14px;
   list-style: none;
   margin-bottom: 10px;
 }
-.main-container footer .inner-container .foot-grid .list-2 ul li:last-child {
+.main-container footer .foot-grid .list-2 ul li:last-child {
   margin: 0px;
 }
-.main-container footer .inner-container .foot-grid .list-3 p {
-  margin-bottom: 25px;
-  font-family: "Museo300";
-  font-size: 20px;
+.main-container footer .foot-grid .list-2 ul li a {
+  text-decoration: none;
+  color: #555555;
 }
-.main-container footer .inner-container .foot-grid .list-3 ul li {
+.main-container footer .foot-grid .list-3 h3 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.main-container footer .foot-grid .list-3 ul li {
   font-size: 14px;
   list-style: none;
   margin-bottom: 10px;
 }
-.main-container footer .inner-container .foot-grid .list-3 ul li:last-child {
+.main-container footer .foot-grid .list-3 ul li:last-child {
   margin: 0px;
 }
-.main-container footer .inner-container .foot-grid .list-4 p {
-  margin-bottom: 25px;
-  font-family: "Museo300";
-  font-size: 20px;
+.main-container footer .foot-grid .list-3 ul li a {
+  text-decoration: none;
+  color: #555555;
 }
-.main-container footer .inner-container .foot-grid .list-4 ul li {
+.main-container footer .foot-grid .list-4 h3 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.main-container footer .foot-grid .list-4 ul li {
   font-size: 14px;
   list-style: none;
   margin-bottom: 10px;
 }
-.main-container footer .inner-container .foot-grid .list-4 ul li:last-child {
+.main-container footer .foot-grid .list-4 ul li:last-child {
   margin: 0px;
 }
-.main-container footer .inner-container .foot-grid .list-4 ul li i {
-  padding-right: 8px;
+.main-container footer .foot-grid .list-4 ul li a {
+  text-decoration: none;
+  color: #555555;
+}
+.main-container footer .foot-grid .list-4 ul li i {
+  padding-right: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
